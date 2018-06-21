@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-const UserInput = () => {
+const UserInput = (props) => {
   return (
     <div>
     <input type="text" />

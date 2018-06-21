@@ -34,9 +34,9 @@ changedNameHandler = (event) => {
   render() {
     return (
       <div className="App">
-        <UserInput />
+        <UserInput name={this.state.name[1].username} changed={this.changedNameHandler} />
         <UserOutput name={this.state.name[0].username} click={this.switchNameHandler}/>
-        <UserOutput name={this.state.name[1].username} changed={this.changedNameHandler} />
+        <UserOutput name={this.state.name[1].username} />
         <UserOutput name={this.state.name[2].username}/>
       </div>
     );
